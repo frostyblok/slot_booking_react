@@ -6,7 +6,7 @@ const TimeSlots = ({ timeSlots, onAnyTimeSlotClicked }) => {
         onAnyTimeSlotClicked(value)
     }
     return (
-        <div className="row flex-wrap">
+        <div className="row flex-wrap justify-content-center">
             {timeSlots.map((timeSlot, index) => (
                 <TimeSlot onTimeSlotClicked={onClick} timeSlot={timeSlot} key={index} />
             ))}

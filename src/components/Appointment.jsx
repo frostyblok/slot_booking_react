@@ -87,12 +87,14 @@ class Appointment extends Component {
                 <div className="row">
                     <h2 className="text-center mb-5">Book Your Slot</h2>
                     <div className="col-lg-6 vh-100">
+                        <p>*Choose a different date that works for you?</p>
                         <Calendar onChange={this.onCalendarClicked} value={new Date(this.state.day)} />
                     </div>
                     <div className="col-lg-6 vh-100">
+                        <p className="text-center">*Select timeslot from list of available timeslots</p>
                         <TimeSlots onAnyTimeSlotClicked={this.onTimeSlotClicked} timeSlots={currentTimeSlots} />
                         <div className="row">
-                            <button className="btn btn-primary mt-3 book-appointment" onClick={this.bookAppointment}>Book Appointment</button>
+                            <button className="btn mt-3 book-appointment w-75 m-auto" onClick={this.bookAppointment}>Book Appointment</button>
                             <Pagination
                                 numberOfPages={ numOfPages }
                                 currentPage = { this.state.currentPage }

@@ -24,14 +24,16 @@ class Home extends Component {
                     <div className="formbold-form-wrapper">
                         <div className="flex flex-wrap formbold--mx-3">
                             <FormInput
+                                name="date"
                                 type="date"
                                 label="date"
                                 value={this.state.date}
                                 handleInputChange={this.handleChange}
                             />
                             <FormInput
+                                name="duration"
                                 type="number"
-                                label="duration"
+                                label="duration (minutes)"
                                 value={this.state.duration}
                                 handleInputChange={this.handleChange}
                             />

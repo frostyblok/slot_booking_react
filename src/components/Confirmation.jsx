@@ -10,7 +10,7 @@ function Confirmation({ location }) {
                 <div className="wrapper-2">
                     <h1>Thank you !</h1>
                     <p>You'll receive communication as regards next steps.</p>
-                    <p>Slot successfully booked for {day} at {start} for {duration}</p>
+                    <p>Slot successfully booked for {day} at {start} for {duration} minutes</p>
                     <button className="dashboard">
                         <Link to="/"> Dashboard </Link>
                     </button>

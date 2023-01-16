@@ -8,7 +8,7 @@ const TimeSlot = ({ timeSlot, onTimeSlotClicked }) => {
     return (
         <div className="col-2 button">
             <input type="radio" name="check-substitution-2" value={timeSlot} onClick={onClick} />
-            <label className="btn btn-default" htmlFor="a25">{timeSlot}</label>
+            <label className="btn btn-default">{timeSlot}</label>
         </div>
     )
 }

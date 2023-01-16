@@ -9,6 +9,9 @@
     box-shadow: 2px 4px 10px 0px #c7cacce3;
     cursor: pointer;
 }
+.button:hover {
+    background: #e2dbfc;
+}
 
 .button label,
 .button input {
@@ -38,11 +41,6 @@
     line-height: 1.8em;
 }
 
-
-
-
-
-
 .react-calendar {
     width: 400px;
     max-width: 100%;
@@ -70,9 +68,6 @@
 abbr[title] {
     text-decoration: none;
 }
-/* .react-calendar__month-view__days__day--weekend {
- color: #d10000;
-} */
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
     background: #f8f8fa;
@@ -130,4 +125,8 @@ abbr[title] {
     border-bottom-right-radius: 6px;
     background: #6f48eb;
     color: white;
+}
+.book-appointment {
+    background: #6a64f1 !important;
+    color: white !important;
 }
